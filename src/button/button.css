@@ -1,0 +1,16 @@
+button {
+  max-width: 8rem;
+  font-weight: var(--fw-700);
+  font-size: var(--font-size-400);
+  padding: calc(1.5rem - var(--s0)) var(--s0);
+  border: 2px solid var(--clr-primary-dark);
+  color: var(--clr-primary-white);
+  background-color: var(--clr-primary-dark);
+  cursor: pointer;
+  outline: none;
+}
+
+.outline {
+  background-color: var(--clr-primary-white);
+  color: var(--clr-primary-dark);
+}

@@ -1,0 +1,36 @@
+p {
+  font-family: var(--ff-secondary);
+}
+
+.with-sidebar {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.sidebar {
+  /* if you omit flex-basis, the sidebar's width will be dictated by the width of its content. The warpping will work the same though. */
+  flex-basis: 20rem;
+  flex-grow: 1;
+}
+
+.not-sidebar {
+  /* you don't give it an ideal width but set flex-grow very high so it will take up ALL the AVAILABLE SPACE that is left after the browser has deducted the sidbear's flex-basis from the total viewport width */
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: 50%;
+}
+
+/* for show style here, not necessary for layout*/
+.sidebar__container {
+  padding: var(--space);
+  background-color: var(--clr-secondary-aliceblue);
+  border: 2px dashed var(--clr-secondary-peach);
+}
+
+.not-sidebar__container {
+  padding: var(--space);
+  background-color: var(--clr-secondary-aliceblue);
+  border: 2px dashed var(--clr-secondary-peach);
+}
