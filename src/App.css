@@ -13,7 +13,7 @@
   --font-size-800: 2.25rem;
   --font-size-1000: 2.5rem;
 
-  --measure: 200ch;
+  --measure: 80ch;
   --space: 1.5rem;
 
   --ratio: 1.5;
@@ -29,7 +29,7 @@
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
 
-  --clr-primary-dark: rgb(6, 5, 5);
+  --clr-primary-dark: #060505;
   --clr-primary-white: #fff;
 
   --clr-secondary-aliceblue: aliceblue;

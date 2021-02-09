@@ -1,0 +1,22 @@
+.center {
+  max-width: var(--measure);
+  /* to let padding grow size of component, we override below */
+  box-sizing: content-box;
+  padding: var(--s3) var(--s3);
+  /* we add left and right auto margins but not top-bottom - to protect the margin presetes of the stack layout we also used here */
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  /* to align everything that is shorter than the set 60ch measure, i.e. Button. Everything else will take up the entire available space */
+  align-items: center;
+}
+
+/* for demo only, not part of Center layout */
+.misc-styles {
+  border: 2px solid var(--clr-primary-dark);
+  background-color: var(--clr-secondary-aliceblue);
+}
+h1 {
+  padding: 5rem 0 0 0;
+}

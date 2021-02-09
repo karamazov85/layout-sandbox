@@ -1,6 +1,7 @@
 import './App.css';
 import Stack from "./stack/Stack"
 import Sidebar from "./sidebar/Sidebar"
+import Center from "./center/Center"
 
 const App = () => {
   return (
@@ -11,6 +12,9 @@ const App = () => {
       <section className="bg-cyan">
         <Sidebar />
       </section> 
+      <div className="bg-cyan">
+        <Center />
+      </div>
     </div>
   );
 }
