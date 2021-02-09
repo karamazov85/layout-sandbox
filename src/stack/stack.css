@@ -19,6 +19,7 @@ label {
 }
 
 input {
+  max-width: 100%;
   border: 2px solid var(--clr-primary-dark);
   border-radius: 0;
   min-height: var(--s2);
