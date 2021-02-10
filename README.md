@@ -2,7 +2,7 @@
 
 This a is series of drills to learn and demonstrate CSS layouts that are fully responsive and self-adjusting without using any (zero, nada, zip!) `@media` queries. The UI library is `react`.
 
-Demo: https://60204958dc03780007750f5a--quizzical-varahamihira-578ce8.netlify.app/
+Demo: https://quizzical-varahamihira-578ce8.netlify.app/
 
 ## Based on the Every Layout design system
 
