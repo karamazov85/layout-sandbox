@@ -6,6 +6,7 @@ import Center from "./center/Center"
 const App = () => {
   return (
     <div className="App">
+      <h1 className="site__title">Algorithmic CSS Layouts: no @media queries!</h1>
       <section className="bg-cyan">
         <Stack />
       </section>

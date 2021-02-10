@@ -85,6 +85,11 @@ h1 {
   text-align: center;
 }
 
+.site__title {
+  background-color: var(--clr-secondary-aliceblue);
+  border: 2px dashed var(--clr-secondary-peach);
+}
+
 section {
   padding: 5rem 0 0 0;
   width: 100%;
