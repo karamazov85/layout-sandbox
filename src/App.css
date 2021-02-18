@@ -66,6 +66,7 @@ ol,
 a,
 p {
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -76,6 +77,12 @@ img {
 a,
 label {
   display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 h1 {
@@ -98,17 +105,22 @@ section {
   align-items: center;
 }
 
-.bg-cyan {
+.App {
   background-color: var(--clr-secondary-cyan);
 }
 
-/* classes for THE STACK */
+.site__title {
+  padding: 5rem;
+}
+
+/* classes for THE STACK - it will be shared */
 
 .stack {
   --space: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .stack > * + * {
@@ -116,5 +128,5 @@ section {
 }
 
 .stack-small > * + * {
-  margin-top: 0.5rem;
+  margin-top: var(--space) / 3;
 }

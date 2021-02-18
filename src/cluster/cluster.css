@@ -1,0 +1,36 @@
+.cluster {
+  --space: 1rem;
+
+  /* for presentation only: */
+  width: 100%;
+  background-color: var(--clr-secondary-aliceblue);
+  border: 2px solid var(--clr-primary-dark);
+}
+
+.cluster > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* we need negative margin at the edges of the cluster to pull cluster elements to the edges of the cluster. Otherwise there will be extra margins when wrapping */
+  margin: (var(--space) / 2 * -1);
+}
+
+.cluster > * > * {
+  margin: calc(var(--space) / 2);
+}
+
+.cluster > * > :nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: (var(--space) / 2 * -1);
+}
+
+.cluster > * > :nth-child(2) > * {
+  margin: calc(var(--space) / 2);
+}
+
+h1 {
+  padding: 0;
+}

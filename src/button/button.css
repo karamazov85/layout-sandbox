@@ -14,3 +14,7 @@ button {
   background-color: var(--clr-primary-white);
   color: var(--clr-primary-dark);
 }
+
+.full-size {
+  max-width: 100%;
+}

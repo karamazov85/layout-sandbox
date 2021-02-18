@@ -2,20 +2,28 @@ import './App.css';
 import Stack from "./stack/Stack"
 import Sidebar from "./sidebar/Sidebar"
 import Center from "./center/Center"
+import Cluster from "./cluster/Cluster"
+import Switcher from "./switcher/Switcher"
 
 const App = () => {
   return (
     <div className="App">
       <h1 className="site__title">Algorithmic CSS Layouts: no @media queries!</h1>
-      <section className="bg-cyan">
+      <section>
         <Stack />
       </section>
-      <section className="bg-cyan">
+      <section>
         <Sidebar />
       </section> 
-      <div className="bg-cyan">
+      <section>
         <Center />
-      </div>
+      </section>
+      <section>
+        <Cluster />
+      </section>
+      <section>
+        <Switcher />
+      </section>
     </div>
   );
 }

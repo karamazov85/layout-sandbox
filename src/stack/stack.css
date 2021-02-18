@@ -1,3 +1,18 @@
+/* .stack {
+  --space: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * + * {
+  margin-top: var(--space);
+}
+
+.stack-small > * + * {
+  margin-top: var(--space) / 3;
+} */
+
 .form__container--outer {
   min-width: 70%;
   padding: var(--space);

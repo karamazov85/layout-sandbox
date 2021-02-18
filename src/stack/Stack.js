@@ -17,9 +17,6 @@ const Stack = () => {
             </div>
             <Button children="Submit" outline={false}/>
         </div>
-        <br />
-        <br />
-        <br />
         <h1>THE STACK WITH TEXT</h1>
         <div className="text__container--outer stack">
             <h2>The Wasteland</h2>

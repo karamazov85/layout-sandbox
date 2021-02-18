@@ -1,0 +1,49 @@
+.switcher {
+  --space: 1.5rem;
+  --threshold: 60rem;
+
+  /* for presentation here only */
+  border: 2px solid var(--clr-primary-dark);
+  background-color: var(--clr-secondary-aliceblue);
+  font-family: var(--ff-secondary);
+}
+
+.switcher > * {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* use negative margin techniqu to force all flex-elements to the border of the flex-container */
+  margin: calc(var(--spcace) / 2 * -1);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.switcher > * > * {
+  flex-grow: 1;
+  /*  we take the threshold we set and  subtract from it the full witdh of the parent/container element and aument it to be a very large number. 
+  
+  If the number is negative, the parent is wider than the threshold value and CSS will drop the rule set and just applies flex-grow: 1 to all elements. 
+  
+  If the number is positive, the container width is smaller than the threshold - in that case the flex-basis will be a massive positive nuber and force all flex elements to take up full width of the container element*/
+
+  /* flex-basis: calc((var(--threshold) - 100%) * 999); */
+
+  /* ADVANCE VERSION: we used negative margins on the flex-container so it's now wider than its container by the value of that --space margin. So we need to subtract it from the 100% here to make sure the flex-container's full width is always === outer container's full width.*/
+  flex-basis: calc((var(--threshold) - 100% - var(--space)) * 999);
+
+  margin: calc(var(--space) / 2);
+
+  border: 2px dashed var(--clr-secondary-peach);
+  text-align: center;
+}
+
+/* if there are more than 4 flex elements in the flex container, we apply to the 5th element and then all its siblings (~ *) a flex basis of 100% - so even if we are above threshold, we only get a column arrangement, avoiding squashing the flex elements if there are too many of them for a nice horizontal arrangement.*/
+.switcher > * > :nth-last-child(n + 5),
+.switcher > * > :nth-last-child(n + 5) ~ * {
+  flex-basis: 100%;
+}
+
+.card > * {
+  max-width: 100%;
+}

@@ -1,10 +1,10 @@
 import React from 'react'
 import "./button.css"
 
-const Button = ({ children, outline }) => {
+const Button = ({ children, outline, fullsize }) => {
     return (
         <>
-           <button className={outline ? "outline" : "full" }>
+           <button className={`${outline ? "outline" : "full"} ${fullsize ? "full-size" : ""}`}>
                {children}
            </button> 
         </>
