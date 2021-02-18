@@ -1,0 +1,53 @@
+.cover {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: var(--s0);
+
+  background-color: var(--clr-primary-white);
+  border: 2px solid var(--clr-primary-dark);
+}
+
+/* now define raw margin rules and progressively override with exceptions where necessary */
+
+.cover > * {
+  margin-top: var(--space);
+  margin-bottom: var(--space);
+}
+
+.centered {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Strip top and bottom margins off first and last child BUT NOT if there is no other element but .centered - in that case, retain rules specified above */
+.cover > :first-child:not(.centered) {
+  margin-top: 0;
+}
+
+.cover > :last-child:not(.centered) {
+  margin-bottom: 0;
+}
+
+/* PRESENTATION CLASSES */
+/* apply Stack flow spacing for .centered element. For presentation here only */
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.stack > * + * {
+  margin-top: var(--space);
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.cover > * {
+  background-color: var(--clr-secondary-aliceblue);
+  border: 2px dashed var(--clr-secondary-peach);
+}

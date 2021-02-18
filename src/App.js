@@ -4,6 +4,7 @@ import Sidebar from "./sidebar/Sidebar"
 import Center from "./center/Center"
 import Cluster from "./cluster/Cluster"
 import Switcher from "./switcher/Switcher"
+import Cover from "./cover/Cover"
 
 const App = () => {
   return (
@@ -23,6 +24,9 @@ const App = () => {
       </section>
       <section>
         <Switcher />
+      </section>
+      <section>
+        <Cover />
       </section>
     </div>
   );

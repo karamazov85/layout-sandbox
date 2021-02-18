@@ -112,21 +112,3 @@ section {
 .site__title {
   padding: 5rem;
 }
-
-/* classes for THE STACK - it will be shared */
-
-.stack {
-  --space: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.stack > * + * {
-  margin-top: var(--space);
-}
-
-.stack-small > * + * {
-  margin-top: var(--space) / 3;
-}

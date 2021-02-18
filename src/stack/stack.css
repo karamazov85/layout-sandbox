@@ -1,4 +1,4 @@
-/* .stack {
+.stack {
   --space: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
 
 .stack-small > * + * {
   margin-top: var(--space) / 3;
-} */
+}
 
 .form__container--outer {
   min-width: 70%;
